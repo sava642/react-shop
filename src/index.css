@@ -11,3 +11,71 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+nav {
+  padding: 0 1rem;
+}
+.content{
+  min-height: calc(100vh - 70px - 64px);
+  padding: 1.5rem;
+}
+.goods{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+.card{
+  display:flex;
+  flex-direction: column;
+  
+}
+.card-content{
+  flex-grow: 1;
+}
+.card-content>p{
+  margin-bottom: 10px;
+  padding-bottom: 0px;
+}
+.cart{
+  position: fixed;
+  bottom: 2rem;
+  right:2rem;
+  cursor: pointer;
+  z-index: 2;
+  padding: 1rem;
+}
+@media(min-width: 767px) {
+
+ .cart{
+   top: 5rem;
+   bottom: unset;
+ }
+}
+.basket-list{
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width:50%;
+  max-width:90%;
+  z-index: 6;
+}
+.closed-basket{
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.delete-item{
+  cursor: pointer;
+  position: relative;
+  right: -11px;
+}
+#toast-container{
+  top:4.7rem !important;
+}
+.toast-alert{
+  justify-content: center;
+}
+.card-action{
+  padding-bottom: 0px;
+}
