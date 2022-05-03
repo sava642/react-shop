@@ -71,11 +71,15 @@ nav {
   right: -11px;
 }
 #toast-container{
-  top:4.7rem !important;
+  top:2.3rem !important;
+ width: auto;
 }
-.toast-alert{
-  justify-content: center;
-}
-.card-action{
-  padding-bottom: 0px;
-}
+@media(max-width: 767px) {
+
+  #toast-container{
+    top:2.3rem !important;
+    width: auto;
+  }
+ }
+
+
